@@ -1,0 +1,14 @@
+{
+  "Nickname": "SetEsl",
+  "Visibility": "Visible",
+  "OneLineDescription": "Sets the ESLFlag on Synthesis patch mods. Ensure this is the last synthesis patch in each group.",
+  "LongDescription": "Sets the ESLFlag on Synthesis patch mods. Ensure this is the last synthesis patch in each group.",
+  "PreferredAutoVersioning": "Default",
+  "RequiredMods": [],
+  "TargetedReleases": [
+    "SkyrimSE",
+    "Fallout4",
+    "EnderalSE",
+    "SkyrimSEGog"
+  ]
+}
