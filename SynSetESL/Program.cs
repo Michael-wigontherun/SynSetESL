@@ -17,7 +17,7 @@ namespace SynSetESL
 
         public static void RunPatch(IPatcherState<ISkyrimMod, ISkyrimModGetter> state)
         {
-            uint uintMin = 0x800;
+            uint uintMin = 0x000;
             uint uintMax = 0xFFF;
             bool isESPFE = true;
             ModKey patchModKey = state.PatchMod.ModKey;
@@ -30,7 +30,7 @@ namespace SynSetESL
                 if (rec.FormKey.ID > uintMax) isESPFE = false;
             }
 
-            if (isESPFE) state.PatchMod.ModHeader.Flags |= SkyrimModHeader.HeaderFlag.LightMaster;
+            if (isESPFE) state.PatchMod.ModHeader.Flags |= SkyrimModHeader.HeaderFlag.Light;
         }
     }
 }
