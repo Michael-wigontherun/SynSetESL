@@ -30,7 +30,7 @@ namespace SynSetESL
                 if (rec.FormKey.ID > uintMax) isESPFE = false;
             }
 
-            if (isESPFE) state.PatchMod.ModHeader.Flags |= SkyrimModHeader.HeaderFlag.LightMaster;
+            if (isESPFE) state.PatchMod.ModHeader.Flags |= SkyrimModHeader.HeaderFlag.Light;
         }
     }
 }
