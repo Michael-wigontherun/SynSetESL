@@ -26,8 +26,16 @@ namespace SynSetESL
             {
                 if (!rec.FormKey.ModKey.Equals(patchModKey)) continue;
 
-                if (rec.FormKey.ID < uintMin) isESPFE = false;
-                if (rec.FormKey.ID > uintMax) isESPFE = false;
+                if (rec.FormKey.ID < uintMin)
+                {
+                    isESPFE = false;
+                    break;
+                }
+                if (rec.FormKey.ID > uintMax)
+                {
+                    isESPFE = false;
+                    break;
+                }
             }
 
             if (isESPFE) state.PatchMod.ModHeader.Flags |= SkyrimModHeader.HeaderFlag.Small;
